@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description" content="A simple online calculator application">
+    <!-- Add favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Online Calculator</h1>
+        <div id="serverStatus" class="server-status">🟢 Server Online</div>
+        
+        <div class="input-group">
+            <input type="number" id="num1" placeholder="First Number" step="any">
+            <input type="number" id="num2" placeholder="Second Number" step="any">
+        </div>
+        
+        <div class="button-group">
+            <button onclick="calculate('add')" class="btn-operation">Add (+)</button>
+            <button onclick="calculate('subtract')" class="btn-operation">Subtract (-)</button>
+            <button onclick="calculate('multiply')" class="btn-operation">Multiply (×)</button>
+            <button onclick="calculate('divide')" class="btn-operation">Divide (÷)</button>
+        </div>
+        
+        <div class="result" id="result">
+            Result: <span id="resultValue">-</span>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Online Calculator | <a href="https://github.com/yourusername/your-repo" target="_blank">View on GitHub</a></p>
+    </footer>
+
+    <script src="assets/js/client.js"></script>
+</body>
+</html> 
